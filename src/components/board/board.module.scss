@@ -10,6 +10,7 @@
   background-color: #a6a098;
   width: fit-content;
   border-radius: 12px;
+  image-rendering: pixelated;
 }
 
 .card__revealed {
@@ -18,4 +19,5 @@
   width: fit-content;
   border-radius: 12px;
   opacity: 50%;
+  image-rendering: pixelated;
 }
