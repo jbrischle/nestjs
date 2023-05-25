@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  border: #a6a098 1px solid;
+  background-color: #a6a098;
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.card__revealed {
+  border: #a6a098 1px solid;
+  background-color: #a6a098;
+  width: fit-content;
+  border-radius: 12px;
+  opacity: 50%;
+}
