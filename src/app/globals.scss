@@ -1,3 +1,9 @@
 :root {
   background-color: rgb(43, 45, 48);
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
