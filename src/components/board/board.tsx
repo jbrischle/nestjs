@@ -1,7 +1,7 @@
 'use client';
 import styles from './board.module.scss';
 import { Card } from '@/components/card/card';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Board({ list }: { list: string[] }) {
   const [currentTurn, setCurrentTurn] = React.useState(
@@ -11,12 +11,15 @@ export default function Board({ list }: { list: string[] }) {
     {} as Record<number, string>
   );
 
+  useEffect(() => {
+    checkIfIsPair(currentTurn);
+  }, [currentTurn]);
+
   function checkIfIsPair(local: { [p: number]: string }): void {
     const [first, second] = Object.values(local);
 
     if (first === second) {
-      const l = { ...revealedPairs, ...local };
-      setRevealedPairs(l);
+      setRevealedPairs({ ...revealedPairs, ...local });
     }
   }
 
@@ -28,11 +31,11 @@ export default function Board({ list }: { list: string[] }) {
     } else {
       local[index] = entry;
       setCurrentTurn(local);
-      checkIfIsPair(local);
     }
   }
 
   function shouldShowBack(index: number) {
+    console.log('shouldShowBack');
     return (
       !Object.keys(currentTurn).includes(index.toString()) &&
       !Object.keys(revealedPairs).includes(index.toString())
