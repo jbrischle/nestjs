@@ -7,3 +7,20 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+
+    img {
+      width: 30px;
+    }
+  }
+}

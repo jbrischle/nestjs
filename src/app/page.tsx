@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from '@/components/board/board';
+import { Footer } from '@/components/footer/footer';
 
 function shuffle(array: string[]) {
   let currentIndex = array.length,
@@ -37,5 +38,10 @@ function getRandomPokemonIds() {
 export default function Home() {
   const list = shuffle(getRandomPokemonIds());
 
-  return <Board list={list}></Board>;
+  return (
+    <div>
+      <Board list={list}></Board>
+      <Footer />
+    </div>
+  );
 }
