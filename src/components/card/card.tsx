@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 export function Card({
   id,
@@ -13,20 +12,14 @@ export function Card({
 
   if (showBack) {
     return (
-      <Image
-        priority={true}
-        width={100}
-        height={100}
+      <img
         src={back}
-        alt="pokemon"
+        alt="pokemon-egg"
       />
     );
   } else {
     return (
-      <Image
-        loading={'lazy'}
-        width={100}
-        height={100}
+      <img
         src={front}
         alt="pokemon"
       />
