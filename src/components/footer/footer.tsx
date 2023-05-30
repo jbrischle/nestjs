@@ -1,4 +1,5 @@
 import styles from './footer.module.scss';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -7,7 +8,10 @@ export function Footer() {
         href="https://github.com/jbrischle/memory"
         target="_blank"
       >
-        <img
+        <Image
+          loading={'lazy'}
+          width={100}
+          height={100}
           alt="github link jbrischle"
           src="/github.svg"
         />
