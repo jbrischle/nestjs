@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export function Card({
   id,
@@ -12,7 +13,9 @@ export function Card({
 
   if (showBack) {
     return (
-      <img
+      <Image
+        width={100}
+        height={100}
         src={back}
         alt="pokemon"
       />
