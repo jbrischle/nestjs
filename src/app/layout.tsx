@@ -22,7 +22,33 @@ export default function RootLayout({
           name="Memory Game"
           content="Play memory with pokemons."
         />
-        <meta charSet="utf-8" />
+        <link
+          rel="manifest"
+          href="/manifest.json"
+        />
+        <link
+          href="/icon/memory-game-512.png"
+          rel="icon"
+          type="image/x-icon"
+        />
+        <link
+          href="/icon/memory-game-512.png"
+          rel="apple-touch-icon"
+        />
+        <link
+          href="/icon/memory-game-128.png"
+          rel="apple-touch-icon"
+          sizes="128x128"
+        />{' '}
+        <link
+          href="/icon/memory-game-256.png"
+          rel="apple-touch-icon"
+          sizes="256x256"
+        />{' '}
+        <meta
+          name="theme-color"
+          content="#fff"
+        />
       </head>
       <body className={inter.className}>{children}</body>
       <Analytics />
