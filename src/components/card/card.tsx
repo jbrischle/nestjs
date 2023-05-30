@@ -14,7 +14,7 @@ export function Card({
   if (showBack) {
     return (
       <Image
-        loading={'lazy'}
+        priority={true}
         width={100}
         height={100}
         src={back}
@@ -23,7 +23,10 @@ export function Card({
     );
   } else {
     return (
-      <img
+      <Image
+        loading={'lazy'}
+        width={100}
+        height={100}
         src={front}
         alt="pokemon"
       />
