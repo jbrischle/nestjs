@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Board from '@/components/board/board';
 import { Footer } from '@/components/footer/footer';
