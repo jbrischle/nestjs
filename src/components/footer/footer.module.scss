@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  a {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

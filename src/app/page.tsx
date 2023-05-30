@@ -39,9 +39,9 @@ export default function Home() {
   const list = shuffle(getRandomPokemonIds());
 
   return (
-    <div>
+    <React.Fragment>
       <Board list={list}></Board>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }

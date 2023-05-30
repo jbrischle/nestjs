@@ -1,26 +1,12 @@
 :root {
   background-color: rgb(43, 45, 48);
+  --card-size: 10vh;
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  a {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-
-    img {
-      width: 30px;
-    }
-  }
+  flex-direction: column;
 }

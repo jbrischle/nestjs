@@ -35,7 +35,6 @@ export default function Board({ list }: { list: string[] }) {
   }
 
   function shouldShowBack(index: number) {
-    console.log('shouldShowBack');
     return (
       !Object.keys(currentTurn).includes(index.toString()) &&
       !Object.keys(revealedPairs).includes(index.toString())

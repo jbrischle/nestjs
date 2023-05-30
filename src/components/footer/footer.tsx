@@ -1,6 +1,8 @@
+import styles from './footer.module.scss';
+
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <a
         href="https://github.com/jbrischle/memory"
         target="_blank"

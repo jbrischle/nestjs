@@ -2,6 +2,7 @@ import './globals.scss';
 import { Inter } from 'next/font/google';
 import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { Footer } from '@/components/footer/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
