@@ -39,12 +39,12 @@ export default function RootLayout({
           href="/icon/memory-game-128.png"
           rel="apple-touch-icon"
           sizes="128x128"
-        />{' '}
+        />
         <link
           href="/icon/memory-game-256.png"
           rel="apple-touch-icon"
           sizes="256x256"
-        />{' '}
+        />
         <meta
           name="theme-color"
           content="#fff"
