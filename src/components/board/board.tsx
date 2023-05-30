@@ -12,16 +12,16 @@ export default function Board({ list }: { list: string[] }) {
   );
 
   useEffect(() => {
+    function checkIfIsPair(local: { [p: number]: string }): void {
+      const [first, second] = Object.values(local);
+
+      if (first === second) {
+        setRevealedPairs({ ...revealedPairs, ...local });
+      }
+    }
+
     checkIfIsPair(currentTurn);
   }, [currentTurn]);
-
-  function checkIfIsPair(local: { [p: number]: string }): void {
-    const [first, second] = Object.values(local);
-
-    if (first === second) {
-      setRevealedPairs({ ...revealedPairs, ...local });
-    }
-  }
 
   function onClick(entry: string, index: number) {
     const local = { ...currentTurn };
